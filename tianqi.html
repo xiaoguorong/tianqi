@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>天气app</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/tianqi.css">
+	<script src="js/rem.js"></script><!-- 引入js文件 -->
+	<link rel="icon" href="img/logo.ico" type="image/x-icon" />
+</head>
+<body>
+	<!-- 当前信息 -->
+	<section id="now">
+		<h1 class="now_city">
+			<span class="address_icon">&#xe70b;</span>
+			<span class="now_city_name"></span>
+		</h1>
+
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2></h2>
+		</div>
+
+		<!-- 当前温度 -->
+		<h2 class="noe_temp">
+			<span></span>°
+		</h2>
+
+		<!-- 当前天气 -->
+		<h2 class="tianqi">
+		</h2>
+
+		<!-- 风向等级 -->
+		<div class="type">	
+			<b></b>
+			<b></b>
+		</div>
+	
+		<!-- 祝福语 -->
+		<h2 class="lucky"></h2>
+	</section>
+	
+	<!-- 未来两天的信息 -->
+	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p>
+					<span class="today_hightemp"></span>/
+					<span class="today_lowtemp"></span>℃
+				</p>
+			</div>
+
+			<div class="future_top">
+				<span class="taday_tianqi"></span>
+				<div class="today_img">
+				</div>
+			</div>
+		</div>
+		<div class="future_box ttomorrow">
+			<div class="future_top">
+				<span class="future_date">明天</span>
+				<p>
+					<span class="tomorrow_hightemp"></span>/
+					<span class="tomorrow_lowtemp"></span>℃
+				</p>
+			</div>
+
+			<div class="future_top">
+				<span class="tomorrow_tianqi"></span>
+				<div class="tomorrow_img">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 未来24小时 -->
+	<ul id="hours">
+	
+	</ul>
+
+	<!-- 未来一周 -->
+	<ul class="week">
+		
+	</ul>
+
+	<!-- 城市 -->
+	<main class="citys">
+		<header>
+			<input type="text" class="search" placeholder="请输入搜索内容">
+			<h2 class="btn">取消</h2>
+		</header>
+		<div class="mask"></div>
+		<div class="city_bottom">
+			<div class="hot_citys">
+				<div class="title"><h1>热门城市</h1></div>
+				<div class="bot_item">
+					<ul>
+						<li class="hot_city"><span>太原</span></li>
+						<li class="hot_city"><span>北京</span></li>
+						<li class="hot_city"><span>上海</span></li>
+						<li class="hot_city"><span>四川</span></li>
+						<li class="hot_city"><span>杭州</span></li>
+						<li class="hot_city"><span>西安</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="hot_citys">
+				<div class="title title1"><h1>贵州</h1></div>
+				<div class="bot_item">
+					<ul>
+						<li class="hot_city"><span>仁怀</span></li>
+						<li class="hot_city"><span>福泉</span></li>
+						<li class="hot_city"><span>同仁</span></li>
+						<li class="hot_city"><span>贵阳</span></li>
+						<li class="hot_city"><span>六盘水</span></li>
+						<li class="hot_city"><span>毕节</span></li>
+						<li class="hot_city"><span>凯里</span></li>
+						<li class="hot_city"><span>遵义</span></li>
+						<li class="hot_city"><span>都君</span></li>
+						<li class="hot_city"><span>赤水</span></li>
+						<li class="hot_city"><span>兴义</span></li>
+						<li class="hot_city"><span>清真</span></li>
+						<li class="hot_city"><span>鹅城</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="hot_citys">
+				<div class="title"><h1>河南</h1></div>
+				<div class="bot_item">
+					<ul>
+						<li class="hot_city"><span>灵宝</span></li>
+						<li class="hot_city"><span>孟州</span></li>
+						<li class="hot_city"><span>开封</span></li>
+						<li class="hot_city"><span>卫辉</span></li>
+						<li class="hot_city"><span>汝州</span></li>
+						<li class="hot_city"><span>驻马店</span></li>
+						<li class="hot_city"><span>林州</span></li>
+						<li class="hot_city"><span>郑州</span></li>
+						<li class="hot_city"><span>洛阳</span></li>
+						<li class="hot_city"><span>邓州</span></li>
+						<li class="hot_city"><span>许昌</span></li>
+						<li class="hot_city"><span>焦作</span></li>
+						<li class="hot_city"><span>巩义</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<table>
+	<tbody></tbody>
+	</table>
+	<h3></h3>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
